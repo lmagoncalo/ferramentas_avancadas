@@ -1,0 +1,18 @@
+# OS and Linux.
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+
+
+# On Windows.
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+
+
+uv init <project-name> --python 3.10
+
+uv add jupyter scikit-learn scikit-image matplotlib seaborn 'numpy<2' tiktoken
+
+uv pip install torch torchvision torchtext sentence-transformers
+
+source .venv/bin/activate
+
+jupyter lab
