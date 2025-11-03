@@ -13,6 +13,10 @@ uv add jupyter scikit-learn scikit-image matplotlib seaborn 'numpy<2' tiktoken
 
 uv pip install torch torchvision torchtext sentence-transformers
 
+# OS and Linux and Windows
 source .venv/bin/activate
+
+# Windows if above does not work
+. .venv/Scripts/activate
 
 jupyter lab
