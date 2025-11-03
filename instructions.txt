@@ -18,5 +18,6 @@ source .venv/bin/activate
 
 # Windows if above does not work
 . .venv/Scripts/activate
+.venv\Scripts\activate.bat
 
 jupyter lab
