@@ -9,6 +9,8 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 
 uv init <project-name> --python 3.10
 
+cd <project-name>
+
 uv add jupyter scikit-learn scikit-image matplotlib seaborn 'numpy<2' tiktoken
 
 uv pip install torch torchvision torchtext sentence-transformers
